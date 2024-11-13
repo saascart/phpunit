@@ -1,0 +1,32 @@
+{
+    "name": "saascart/phpunit",
+    "description": "PHPUnit is a testing framework designed for PHP developers, following the xUnit architecture for unit testing frameworks.",
+    "type": "library",
+    "require": {
+        "php": ">=8.0",
+        "jackiedo/dotenv-editor": "*"
+    },
+    "license": "BSD-3-Clause",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Saascart\\Phpunit\\": "src/"
+        },
+        "files": [
+            "src/PHer.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "saascart"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Saascart\\Phpunit\\PhUntPr\\PhUnt"
+            ]
+        }
+    }
+}
